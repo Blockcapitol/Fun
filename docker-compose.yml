@@ -1,0 +1,18 @@
+services:
+  alpha-alerts:
+    build:
+      context: .
+      dockerfile: Dockerfile.alpha
+    image: web3-agents/alpha-alerts:latest
+
+  grant-bounty:
+    build:
+      context: .
+      dockerfile: Dockerfile.grant_bounty
+    image: web3-agents/grant-bounty:latest
+
+  yield-ops:
+    build:
+      context: .
+      dockerfile: Dockerfile.yield_ops
+    image: web3-agents/yield-ops:latest
